@@ -1,6 +1,6 @@
 setup:
-    composer:
-        action: "install"
+    shell:
+        - "composer install"
 
 test:
     php_unit:
