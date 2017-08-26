@@ -2,5 +2,6 @@
 echo "Testing things in DIR: "
 echo $PWD
 echo "\n"
-
+gunzip workspace.tar
+tar -xvf workspace.tar
 ./vendor/bin/phpunit -c phpunit.xml
