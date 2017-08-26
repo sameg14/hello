@@ -1,17 +1,4 @@
-build_settings:
-    ignore:
-        - "vendor"
-        - "tests"
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: "root"
-
 setup:
-    mysql:
-        - "DROP DATABASE IF EXISTS test;"
-        - "CREATE DATABASE test;"
-        - "GRANT ALL PRIVILEGES ON test.* TO root@'localhost' IDENTIFIED BY 'root';"
     composer:
         action: "install"
 
@@ -21,10 +8,3 @@ test:
             - "phpunit.xml"
         directory:
             - "tests/"
-
-complete:
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: "root"
-        - "DROP DATABASE IF EXISTS test;"
