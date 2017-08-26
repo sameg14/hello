@@ -5,3 +5,8 @@ setup:
 test:
     shell:
         - "./vendor/bin/phpunit"
+    php_code_sniffer:
+        path: "app"
+        ignore:
+            - "app/views"
+        standard: "PSR1,PSR2"
