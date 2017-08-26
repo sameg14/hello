@@ -1,2 +1,3 @@
 #!/bin/bash
-./vendor/bin/phpunit -c phpunit.xml
+echo "Testing things..."
+# ./vendor/bin/phpunit -c phpunit.xml
