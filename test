@@ -1,3 +1,2 @@
 #!/bin/bash
-tar -zxvf workspace.tar.gz
 ./vendor/bin/phpunit -c phpunit.xml
