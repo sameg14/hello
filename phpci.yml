@@ -3,8 +3,5 @@ setup:
         - "composer install"
 
 test:
-    php_unit:
-        config:
-            - "phpunit.xml"
-        directory:
-            - "tests/"
+    shell:
+        - "./vendor/bin/phpunit"
