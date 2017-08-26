@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "Testing things in DIR: "
-echo $PWD
-echo "\n"
 
+tar -xxvf workspace.tar.gz
 ./vendor/bin/phpunit -c phpunit.xml
