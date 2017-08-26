@@ -1,3 +1,6 @@
 #!/bin/bash
-echo "Testing things..."
-# ./vendor/bin/phpunit -c phpunit.xml
+echo "Testing things in DIR: "
+echo $PWD
+echo "\n"
+
+./vendor/bin/phpunit -c phpunit.xml
