@@ -1,5 +1,3 @@
 #!/bin/bash
-echo "Building...\n"
 php composer.phar install
-touch workspace.tar.gz
-tar -czf workspace.tar.gz --exclude=workspace.tar.gz .
+zip -r app.zip -x app.zip .
